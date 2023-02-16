@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data_backend</title>
+</head>
+
+<body>
+    <table border="3px">
+        <tr>
+            <td>name</td>
+            <td>email</td>
+            <td>salary</td>
+        </tr>
+        {% for i in obj %}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.salary}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
